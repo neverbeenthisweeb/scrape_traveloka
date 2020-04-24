@@ -11,16 +11,15 @@ Flow of the script summary:
   - If both of the options are not found, script will skip that city name and append it to the unfound_cities list.
 2. The page loop (starts from row 71):
   - After the city loop, the browser get to the first page of hotel listing result.
-  - Scrap the data from that page and add the data to the hotels dataframe.
+  - Script will scrap the data from that page and add the data to the hotels dataframe.
   - Find the next button.
-  - If the button is not found, means the browser get to the last page. Then the loop breaks, the script goes back to the city loop.
-  - If the button is found,  script then click the button to get to the next page.
-
-In the end of the script, the duplicates in the hotels dataframe, if found, will be dropped.
-Then, the dataframe will be exported to csv.
+  - If the button is not found, means the browser get to the last page. The loop breaks, then the script goes back to the city loop.
+  - If the button is found, script then click the button to get to the next page.
+3. In the end of the script, the duplicates in the hotels dataframe, if found, will be dropped. Then, the dataframe will be exported to csv.
 
 Variables to specify:
-- The CSV name and directory of the city names to search. (Row 18)
+- The list of cities to search in a CSV file, the CSV name, and the CSV directory. (Row 18) 
+- You also can directly define the cities list in the script.
 - The CSV name and directory of the exported data. (Row 21)
 
 Outputs contacts to CSV with the following information:
