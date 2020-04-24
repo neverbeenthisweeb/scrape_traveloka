@@ -3,7 +3,7 @@ Web scraper for traveloka to get hotel listings. Written in Python and using Sel
 
 NOTE: 
 - To use the script you need to download [__Chrome Selenium driver__](https://sites.google.com/a/chromium.org/chromedriver/downloads) first. Make sure it’s in your PATH, e. g., place it in /usr/bin or /usr/local/bin. You can also use another browser driver if you want.
-- You need VPN or proxy services to be able to scrap from traveloka using this script.
+- You need VPN or proxy services to bypass the anti-scraping tools on the website.
 
 Flow of the script summary:  
 1. In the city loop (starts from row 47), 
