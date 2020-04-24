@@ -23,7 +23,7 @@ Variables to specify:
 - You also can directly define the cities list in the script.
 - The CSV name and directory of the exported data. (Row 21)
 
-Outputs contacts to CSV with the following information:
+Outputs hotel listings to CSV with the following information:
 - Hotel name
 - City
 - Hotel Star
